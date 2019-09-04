@@ -3,7 +3,7 @@
 
 ### Free electron model
 
-#### Drude model
+#### Drude model (classical approach)
 
   * Electrons are free: no electron-electron and no electon-phonon interactions.
   * Electrons collide with ionic cores with probability per unit time $\tau$;
@@ -74,8 +74,29 @@ and we get that $\kappa = 3 k_B^2 n \tau T \,/\, 2m$. Finally, $\kappa / \sigma
 [^3]: $\bar{v}$ is the average velocity and we assume that $|v_x|^2 \approx \bar{v}^2 / 3$
 
 
-#### Sommerfeld model
+#### Sommerfeld model (quantum mechanical approach)
 
+  * Electrons are still free: no electron-electron and no electron-phonon interaction.
+  * Electrons are fermions obeying the Fermi-Dirac distribution.
+
+In this system, electrons move within a metal, i.e. a potential box with a
+rectangular potential barrier. The motion of the electron is then defined by
+the Schriödinger equation and the boundary conditions on the surface of the
+metal. Solutions are plain waves $\psi_{\vb{k}\sigma}(\vb{r}, \sigma_z) =
+\alpha\exp(i\vb{k}\cdot\vb{r})\phi_\sigma(s)$. The spectrum is $E(\vb{k}) =
+\hslash^2 k^2 \,/\, 2m^*$. $\vb{k}$ varies quasi-continuously since
+$k_x = \pi\kappa_x/L_x$, $k_y = \pi\kappa_y/L_y$, $k_z = \pi\kappa_z/L_z$, and
+$\kappa_x,\kappa_y,\kappa_z \in \mathbb{Z}$. To calculate the degree of
+degeneracy $g(E)$, we calculate the volume of a small shell $4\pi p^2 \dd p =
+2^{5/2}\pi m^{*3/2}E^{1/2}$ and divide it by the unit phase cell volume $\Delta
+p_x \Delta p_y \Delta p_z$ which is determined from the Heisenberg uncertainty
+principle $\underbrace{\Delta x \Delta y \Delta y}_{V} \Delta p_x \Delta p_y
+\Delta p_z \sim h^3$. This yields[^4]
+$$
+    g(E) = \frac{1}{h^3} 4\pi (2m^*)^{3/2} VE^{1/2} \equiv CE^{1/2}
+$$
+
+[^4]: Additional coefficient 2 comes from the spin degeneracy.
 
 ### Nearly-Free electron model
 

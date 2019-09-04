@@ -87,6 +87,7 @@
 % if you use exotic symbols you need to import specific packages, eg. for
 % electrical engineering diagrams, musical notation, exotic currency symbols,
 % the unspeakable rites of freemasonry etc.
+\usepackage{amssymb}
 
 
 % `babel`: 
